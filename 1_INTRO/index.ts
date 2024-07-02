@@ -9,9 +9,8 @@ function greeting(name: string) {
   console.log("Olá " + name);
 }
 
-function sum(num1: number, num2: number){
-  console.log(num1 + num2);
-  
+function sum(x: number, y: number){
+  console.log(x + y);  
 }
 
 greeting(firstName)
