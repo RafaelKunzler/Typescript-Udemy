@@ -36,6 +36,22 @@ console.log(typeof a);
 a = true
 console.log(a);
 
+// 4 - inference e annotation
+const ann: string = "Teste"
+let inf = "Teste"
+
+// inf = 1
+
+console.log("Testando 2");
+
+// converter variavel
+
+const num: number = 12
+const str: string = num.toString()
+const str2: string = `Eu vou imprimir o numero ${str}`
+
+console.log(str2);
+
 
 
 
