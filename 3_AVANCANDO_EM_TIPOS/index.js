@@ -56,3 +56,59 @@ function advancedGreeting(firstName, lastName) {
 }
 console.log(advancedGreeting("Rafael", "Rodrigues"));
 console.log(advancedGreeting("Rafael"));
+// 10 - union type
+function showBalance(balance) {
+    console.log(`O saldo na conta é ${balance}`);
+}
+showBalance(100);
+showBalance("500");
+const arr2 = [1, "teste"];
+// 11 - avançando em union types
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuário não aprovado";
+    }
+    return `A função do usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log(`O id é: ${id}`);
+}
+showId(1);
+showId("200");
+function showCoords(obj) {
+    console.log(`X:${obj.x} Y:${obj.y} Z:${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 20
+};
+showCoords(coordObj);
+const somePerson = { name: "Rafael", age: 28 };
+console.log(somePerson);
+// type personType = {
+//   age: number
+// }
+// 15 - literal types
+let test;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é ${direction}`);
+}
+showDirection("left");
+// 16 - no null assertion operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);
+// 17 - bigInt
+let n;
+//n = 1
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+// 18 - symbol
+let symbolA = Symbol("a");
+let symbolB = Symbol("a");
+console.log(symbolA == symbolB);
