@@ -80,3 +80,14 @@ function showDogDetails(dog: Dog) {
 showDogDetails(turca)
 showDogDetails(bob)
 
+// 5 - exercicio
+function showReview(rate: number | boolean) {
+  if(typeof rate === 'boolean'){
+    console.log("Nota não encontrada!");
+    return
+  }
+  console.log(`Nota: ${rate}`);  
+}
+showReview(false)
+showReview(3)
+showReview(5)

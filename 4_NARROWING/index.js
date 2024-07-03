@@ -76,3 +76,14 @@ function showDogDetails(dog) {
 }
 showDogDetails(turca);
 showDogDetails(bob);
+// 5 - exercicio
+function showReview(rate) {
+    if (typeof rate === 'boolean') {
+        console.log("Nota não encontrada!");
+        return;
+    }
+    console.log(`Nota: ${rate}`);
+}
+showReview(false);
+showReview(3);
+showReview(5);
