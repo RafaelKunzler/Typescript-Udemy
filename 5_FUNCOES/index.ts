@@ -101,6 +101,7 @@ function showProductDetails({name, price}: {name: string, price: number}): strin
 
 const shirt = {name: 'Camisa', price: 49.99}
 console.log(showProductDetails(shirt));
+console.log(shirt);
 
 
 
